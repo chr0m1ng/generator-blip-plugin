@@ -1,0 +1,65 @@
+{
+    "name": "generator-blip-plugin",
+    "version": "1.0.0",
+    "description": "Yeoman generator for BLiP plugin React projects with helm and kubernetes.",
+    "author": "Gabriel Rodrigues dos Santos <gabrielrsantoss@icloud.com>",
+    "contributors": [],
+    "homepage": "https://github.com/chr0m1ng/generator-blip-plugin#readme",
+    "keywords": [
+        "yeoman",
+        "yeoman-generator",
+        "node",
+        "esm",
+        "jest",
+        "editorconfig",
+        "eslint",
+        "prettier",
+        "travis",
+        "appveyor",
+        "circleci",
+        "coveralls",
+        "badges"
+    ],
+    "files": [
+        "generators"
+    ],
+    "scripts": {
+        "coverage": "jest --colors --coverage",
+        "coveralls": "npm run coverage && cat ./coverage/lcov.info | coveralls",
+        "jest": "jest --colors --verbose",
+        "lint": "eslint generators/**/*.js test/**/*.js",
+        "test": "npm run lint && npm run jest",
+        "prepare": "node generators/app/generate-files-json.js && node generators/app/generate-dependencies-json.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chr0m1ng/generator-blip-plugin.git"
+    },
+    "bugs": {
+        "url": "https://github.com/chr0m1ng/generator-blip-plugin/issues"
+    },
+    "jest": {
+        "testTimeout": 180000
+    },
+    "dependencies": {
+        "@types/jest": "24.0.12",
+        "@types/yeoman-generator": "3.1.2",
+        "coveralls": "3.0.3",
+        "eslint": "^6.6.0",
+        "eslint-config-airbnb": "^18.2.0",
+        "eslint-config-airbnb-base": "^14.2.0",
+        "eslint-config-prettier": "^6.13.0",
+        "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-prettier": "^3.1.4",
+        "esm": "^3.2.25",
+        "glob": "^7.1.6",
+        "glob-promise": "^3.4.0",
+        "jest": "24.8.0",
+        "prettier": "^2.1.2",
+        "uuid": "7.0.3",
+        "yeoman-assert": "3.1.1",
+        "yeoman-generator": "3.2.0",
+        "yeoman-test": "1.9.1"
+    },
+    "license": "MIT"
+}

@@ -3,9 +3,9 @@ import 'blip-toolkit/dist/blip-toolkit.css';
 import {
     getApplication,
     getContacts,
-    getThreads
-} from '../../api/application-service';
-import { showToast, withLoading } from '../../api/common-service';
+    getThreads,
+} from 'api/application-service';
+import { showToast, withLoading } from 'api/common-service';
 import { PageHeader } from 'components/PageHeader';
 import { BlipTable } from 'components/BlipTable';
 import { CommonProvider } from 'contexts/CommonContext';

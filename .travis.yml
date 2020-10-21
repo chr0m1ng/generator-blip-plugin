@@ -1,0 +1,19 @@
+language: node_js
+
+node_js:
+  - '10'
+
+install:
+  - npm install
+
+script:
+  - npm run prepare
+  - npm test
+
+after_script:
+  - npm run coveralls
+
+notifications:
+  email:
+    on_success: never
+    on_failure: always

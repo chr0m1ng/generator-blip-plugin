@@ -2,7 +2,9 @@ const glob = require('glob-promise');
 const fs = require('fs');
 
 (async () => {
-    const paths = await glob('generators/app/templates/**/*.template');
+    const paths = await glob('generators/app/templates/**/*.template', {
+        dot: true
+    });
 
     console.log(`[FILES]: found ${paths.length} files`);
 

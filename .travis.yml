@@ -7,6 +7,7 @@ install:
   - npm install
 
 script:
+  - npm run prepare
   - npm test
 
 after_script:

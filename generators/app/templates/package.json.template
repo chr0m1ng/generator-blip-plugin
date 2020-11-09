@@ -1,12 +1,27 @@
 {
-    "name": "blip-plugin-example",
+    "name": "<%= project %>",
     "version": "0.1.0",
+    "author": {
+        "name": "<%= name %>",
+        "email": "<%= email %>"
+    },
     "private": true,
     "dependencies": {
         "@testing-library/jest-dom": "^4.2.4",
         "@testing-library/react": "^9.5.0",
         "@testing-library/user-event": "^7.2.1",
         "blip-toolkit": "^5.19.10",
+        "iframe-message-proxy": "^1.1.1",
+        "moment": "^2.29.1",
+        "node-sass": "^4.14.1",
+        "react": "^16.14.0",
+        "react-dom": "^16.14.0",
+        "react-localization": "^1.0.15",
+        "react-scripts": "^3.4.4",
+        "resize-observer": "^1.0.0",
+        "tachyons": "^4.12.0"
+    },
+    "devDependencies": {
         "eslint": "^6.8.0",
         "eslint-config-airbnb": "^18.2.0",
         "eslint-config-airbnb-base": "^14.2.0",
@@ -14,16 +29,7 @@
         "eslint-plugin-import": "^2.22.1",
         "eslint-plugin-prettier": "^3.1.4",
         "eslint-plugin-react": "^7.21.5",
-        "iframe-message-proxy": "^1.1.1",
-        "moment": "^2.29.1",
-        "node-sass": "^4.14.1",
-        "prettier": "^2.1.2",
-        "react": "^16.14.0",
-        "react-dom": "^16.14.0",
-        "react-localization": "^1.0.15",
-        "react-scripts": "^3.4.4",
-        "resize-observer": "^1.0.0",
-        "tachyons": "^4.12.0"
+        "prettier": "^2.1.2"
     },
     "scripts": {
         "start": "react-scripts start",

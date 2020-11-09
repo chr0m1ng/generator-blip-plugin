@@ -1,6 +1,6 @@
 {
     "name": "generator-blip-plugin",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "description": "Yeoman generator for BLiP plugin React projects with helm and kubernetes.",
     "author": {
         "name": "Gabriel Rodrigues dos Santos",

@@ -44,7 +44,7 @@ environment:
 
 appSettings:
     configMap: <%= project %>
-    path: /app/src/appsettings.json
+    path: /app/src/config/appsettings.json
     subPath: appsettings.json
 
 autoscale:
